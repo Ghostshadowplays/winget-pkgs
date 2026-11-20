@@ -1,5 +1,5 @@
 # Created with YamlCreate.ps1 Dumplings Mod
-# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
 
 PackageIdentifier: Servo.Servo.Nightly
 PackageVersion: "1.0"
@@ -8,13 +8,13 @@ Scope: machine
 Protocols:
 - http
 - https
-ProductCode: '{C555670F-A319-4B3A-945F-8A4E4C494BC3}'
-ReleaseDate: 2026-07-19
+ProductCode: '{63D26450-21F3-4BD8-AAD9-1F1CA027CB6A}'
+ReleaseDate: 2026-11-19
 AppsAndFeaturesEntries:
 - DisplayName: ServoShell
 Installers:
 - Architecture: x64
-  InstallerUrl: https://github.com/servo/servo-nightly-builds/releases/download/2026-07-19/servo-x86_64-windows-msvc.exe
-  InstallerSha256: 29A1E409C2B6FD16D0807D9F28B41296300BBF7D98CED68F6E804A19B90228D4
+  InstallerUrl: https://github.com/servo/servo-nightly-builds/releases/download/2026-11-19/servo-x86_64-windows-msvc.exe
+  InstallerSha256: DE7E516328DC8D76CF7DFBDD29A6C8D3D73043D01F7E3884FECE798DBB35D064
 ManifestType: installer
-ManifestVersion: 1.12.0
+ManifestVersion: 1.28.0

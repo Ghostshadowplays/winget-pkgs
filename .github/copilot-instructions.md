@@ -25,7 +25,7 @@ Additional `<Id>.locale.<tag>.yaml` files provide optional translations.
 - The version folder name must match `PackageVersion` exactly
 - The first directory under `manifests/` is the **lowercase** first letter of the publisher
 - Each YAML file includes a `# yaml-language-server: $schema=...` comment pointing to its JSON schema
-- Recommended schema version: **1.12.0** (1.10.0 also accepted)
+- Recommended schema version: **1.28.0** (1.12.0 also accepted)
 - Supported installer types: MSIX, MSI, APPX, EXE, and font files only — no scripts
 
 ## PR Conventions
@@ -34,6 +34,15 @@ Additional `<Id>.locale.<tag>.yaml` files provide optional translations.
 - PRs to `manifests/` trigger an Azure DevOps validation pipeline that runs file validation, URL scanning, SmartScreen checks, manifest policy checks, installation verification, and installer metadata validation
 - PRs are auto-merged when the `Validation-Completed` label is applied (squash merge)
 - Contributors must sign the Microsoft CLA
+
+## Issues and Pull Requests
+
+- Before filing an issue, search existing open and closed issues for duplicates.
+- Use the GitHub issue forms in `.github/ISSUE_TEMPLATE/`; do not file a blank issue unless a maintainer explicitly asks for one.
+- Use `package_issue.yml` for package behavior problems, `package_request.yml` for new package requests, `update_request.yml` for version update requests, and `feature_request.yml` for repository or process improvements.
+- Do not file WinGet client issues here; use `microsoft/winget-cli` for client behavior.
+- Keep issue bodies concise and evidence-based. Do not paste large speculative patches into issue bodies; open a pull request or link a branch when manifest changes are available.
+- Before opening a pull request, review `CONTRIBUTING.md`, follow the PR template, keep the change to exactly one package, and summarize validation performed.
 
 ## Validation and Testing Commands
 
