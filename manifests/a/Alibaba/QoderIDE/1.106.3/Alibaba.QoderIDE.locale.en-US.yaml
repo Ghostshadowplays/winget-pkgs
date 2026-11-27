@@ -28,6 +28,10 @@ Tags:
 - large-language-model
 - llm
 - programming
+ReleaseNotes: |-
+  Everyday Polish
+  Fixes
+  - Fixed a chat startup compatibility issue affecting some Windows users after opening or restarting the IDE, ensuring chats work as expected.
 ReleaseNotesUrl: https://qoder.com/changelog
 PurchaseUrl: https://qoder.com/pricing
 Documentations:
